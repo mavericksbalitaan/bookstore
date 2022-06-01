@@ -1,13 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import '../scss/BookCard.scss';
 
-function BookCard() {
+function BookCard({ book }) {
   return (
     <section className="bookCardWrapper">
       <div className="bookCardContainer">
-        <span className="genre">Action</span>
-        <span className="title">The Hunger Games</span>
-        <span className="author">Suzanne Collins</span>
+        <span className="genre">{book.genre}</span>
+        <span className="title">{book.title}</span>
+        <span className="author">{book.author}</span>
         <div className="options">
           <span className="comments">Comments</span>
           {' '}
@@ -42,14 +44,14 @@ function BookCard() {
 
         <div className="progressPercent">
           <span className="percentComplete">
-            64%
+            {`${book.completed}%`}
           </span>
           <span className="completed">
             Completed
           </span>
         </div>
+        <div className="line2" />
       </div>
-      <div className="line2" />
       <div className="progressStatus">
         <span className="currentChapter">
           Current Chapter
@@ -64,5 +66,15 @@ function BookCard() {
     </section>
   );
 }
+
+BookCard.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.string,
+    title: PropTypes.string,
+    author: PropTypes.string,
+    genre: PropTypes.string,
+    completed: PropTypes.string,
+  }).isRequired,
+};
 
 export default BookCard;
