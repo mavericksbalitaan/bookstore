@@ -1,0 +1,216 @@
+@import './App.scss';
+
+@media screen and (min-width: 768px) {
+  .bookCardWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 4px;
+    border: solid 1px var(--grey-border);
+    background-color: var(--white);
+    margin: 1rem 4rem;
+    padding: 1rem;
+  }
+
+  .bookCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .genre {
+    margin: 0 2.438rem 0 0;
+    opacity: 0.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black-two);
+  }
+
+  .title {
+    margin: 0.188rem 20.188rem 0 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.375rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    color: var(--black-two);
+  }
+
+  .author {
+    margin: 0.25rem 0 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--cool-blue);
+  }
+
+  .options {
+    display: flex;
+    flex-direction: row;
+    margin: 0.188rem 0.938rem 0.125rem 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--cool-blue);
+    margin-top: 1rem;
+
+    .comments {
+      margin-right: 1rem;
+    }
+
+    .remove,
+    .edit {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+
+  .progressContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .progressCircle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .outer {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--grey-border);
+    padding: 5px;
+  }
+
+  .inner {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  circle {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 5px;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 72;
+    transform-origin: center;
+    transform: rotate(-90deg);
+  }
+
+  .svgCircle {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .progressPercent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .percentComplete {
+    width: 4.25rem;
+    height: 2.438rem;
+    margin: 0.063rem 5.75rem 0 0.688rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black-two);
+  }
+
+  .completed {
+    width: 5rem;
+    height: 1.125rem;
+    margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+    opacity: 0.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black-two);
+  }
+
+  .line2 {
+    margin: 1.125rem 3.688rem 0 4.938rem;
+    border: solid 1px var(--grey-border);
+  }
+
+  .progressStatus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+  }
+
+  .currentChapter {
+    opacity: 0.5;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.813rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black-two);
+  }
+
+  .currentLesson {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    color: var(--black-two);
+  }
+
+  .updateProgress {
+    width: 11.5rem;
+    height: 2.063rem;
+    margin: 0.75rem 0 0.563rem;
+    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+    border-radius: 3px;
+    background-color: var(--azure);
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.813rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+  }
+}
