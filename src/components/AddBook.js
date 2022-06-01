@@ -17,7 +17,7 @@ function AddBook() {
     <section className="addBookContainer">
       <div className="line" />
       <span className="addNewBook">ADD NEW BOOK</span>
-      <form>
+      <form className="formContainer">
         <input
           type="text"
           className="inputBookTitle"

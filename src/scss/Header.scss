@@ -13,6 +13,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin: 0 0.5rem;
 }
 
 .Bookstore-CMS {
@@ -66,8 +67,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 0;
     padding: 0;
+    margin: 0 2rem;
   }
 
   .Bookstore-CMS {
@@ -82,7 +83,7 @@
   }
 
   .BOOKS {
-    margin: 0 5rem;
+    margin: 0 2rem 0 3rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -113,6 +114,7 @@
     background-color: transparent;
     cursor: pointer;
     font-size: 1rem;
+    margin-right: 2.5rem;
     color: var(--azure);
   }
 }
