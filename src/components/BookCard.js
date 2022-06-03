@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Progress } from 'antd';
 import '../scss/BookCard.scss';
 
 function BookCard({ book }) {
@@ -22,24 +22,17 @@ function BookCard({ book }) {
       </div>
       <div className="progressContainer">
         <div className="progressCircle">
-          <div className="outer">
-            <div className="inner" />
-          </div>
-          <svg
-            className="svgCircle"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            width="80px"
-            height="80px"
-          >
-            <defs>
-              <linearGradient id="GradientColor">
-                <stop offset="0%" stopColor="#307bbe" />
-                <stop offset="100%" stopColor="#379cf6" />
-              </linearGradient>
-            </defs>
-            <circle cx="40" cy="40" r="37.5" strokeLinecap="round" />
-          </svg>
+          <Progress
+            type="circle"
+            width={80}
+            format={() => ''}
+            strokeColor={{
+              '0%': '#307bbe',
+              '100%': '#379cf6',
+            }}
+            trailColor="#e8e8e8"
+            percent={book.completed}
+          />
         </div>
 
         <div className="progressPercent">

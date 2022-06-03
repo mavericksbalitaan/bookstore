@@ -88,44 +88,7 @@
 }
 
 .progressCircle {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.outer {
   display: none;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: var(--grey-border);
-  padding: 5px;
-}
-
-.inner {
-  display: none;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background-color: white;
-}
-
-circle {
-  display: none;
-  fill: none;
-  stroke: url(#GradientColor);
-  stroke-width: 5px;
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
-  transform-origin: center;
-  transform: rotate(-90deg);
-}
-
-.svgCircle {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .progressPercent {
@@ -307,40 +270,6 @@ circle {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .outer {
-    display: block;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background-color: var(--grey-border);
-    padding: 5px;
-  }
-
-  .inner {
-    display: block;
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background-color: white;
-  }
-
-  circle {
-    display: block;
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 5px;
-    stroke-dasharray: 240;
-    stroke-dashoffset: 72;
-    transform-origin: center;
-    transform: rotate(-90deg);
-  }
-
-  .svgCircle {
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   .progressPercent {
