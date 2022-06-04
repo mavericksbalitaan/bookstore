@@ -7,7 +7,7 @@ function BookCard({ book }) {
   return (
     <section className="bookCardWrapper">
       <div className="bookCardContainer">
-        <span className="genre">{book.category}</span>
+        <span className="category">{book.category}</span>
         <span className="title">{book.title}</span>
         <span className="author">{book.author}</span>
         <div className="options">
@@ -49,7 +49,9 @@ function BookCard({ book }) {
           Current Chapter
         </span>
         <span className="currentLesson">
-          Chapter 01
+          Chapter
+          {' '}
+          {Math.floor(Math.random() * 10)}
         </span>
         <span className="updateProgress">
           Update progress

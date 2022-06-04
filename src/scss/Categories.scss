@@ -13,7 +13,7 @@
   height: 2.063rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
-  background-color: var(--azure);
+  background-color: $clr-azure;
   font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
@@ -22,6 +22,6 @@
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: var(--white);
+  color: $clr-white;
   cursor: pointer;
 }

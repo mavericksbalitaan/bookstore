@@ -1,5 +1,5 @@
 import React from 'react';
-import '../scss/AddBook.scss';
+import '../scss/Form.scss';
 
 function AddBook() {
   const handleInputTitle = (e) => {
@@ -30,6 +30,13 @@ function AddBook() {
           placeholder="Book Author"
           onChange={handleInputAuthor}
         />
+        <select className="selectCategory">
+          <option value="action">Action</option>
+          <option value="classic">Classic</option>
+          <option value="economy">Economy</option>
+          <option value="romance">Romance</option>
+          <option value="sciencefiction">Science Fiction</option>
+        </select>
         <button type="button" className="addBook" onClick={handleAddBook}>ADD BOOK</button>
       </form>
     </section>

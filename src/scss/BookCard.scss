@@ -5,8 +5,8 @@
   grid-template-areas: "book progress status";
   grid-template-columns: 2fr 1fr 1fr;
   border-radius: 4px;
-  border: solid 1px var(--grey-border);
-  background-color: var(--white);
+  border: solid 1px $clr-grey-border;
+  background-color: $clr-white;
   margin: 1rem 0.5rem;
   padding: 1rem;
 }
@@ -19,7 +19,7 @@
   grid-area: book;
 }
 
-.genre {
+.category {
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
   font-family: 'Montserrat', sans-serif;
@@ -29,7 +29,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--black-two);
+  color: $clr-black-two;
 }
 
 .title {
@@ -41,7 +41,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.2px;
-  color: var(--black-two);
+  color: $clr-black-two;
 }
 
 .author {
@@ -53,7 +53,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--cool-blue);
+  color: $clr-cool-blue;
 }
 
 .options {
@@ -67,7 +67,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--cool-blue);
+  color: $clr-cool-blue;
   margin-top: 0.5rem;
 
   .comments {
@@ -106,7 +106,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--black-two);
+  color: $clr-black-two;
 }
 
 .completed {
@@ -119,13 +119,13 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--black-two);
+  color: $clr-black-two;
 }
 
 .line2 {
   display: none;
   margin: 1rem 0;
-  border: solid 1px var(--grey-border);
+  border: solid 1px $clr-grey-border;
 }
 
 .progressStatus {
@@ -145,7 +145,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: var(--black-two);
+  color: $clr-black-two;
 }
 
 .currentLesson {
@@ -156,14 +156,14 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.4px;
-  color: var(--black-two);
+  color: $clr-black-two;
 }
 
 .updateProgress {
   margin: 0.75rem 0;
   padding: 0.25rem;
   border-radius: 3px;
-  background-color: var(--azure);
+  background-color: $clr-azure;
   font-family: 'Roboto Slab', serif;
   font-size: 0.5rem;
   font-weight: 300;
@@ -172,7 +172,7 @@
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: var(--white);
+  color: $clr-white;
   cursor: pointer;
 }
 
@@ -183,8 +183,8 @@
     grid-template-areas: "book progress status";
     grid-template-columns: 2fr 1fr 1fr;
     border-radius: 4px;
-    border: solid 1px var(--grey-border);
-    background-color: var(--white);
+    border: solid 1px $clr-grey-border;
+    background-color: $clr-white;
     margin: 1rem 4rem;
     padding: 1rem;
   }
@@ -197,7 +197,7 @@
     grid-area: book;
   }
 
-  .genre {
+  .category {
     margin: 0 2.438rem 0 0;
     opacity: 0.5;
     font-family: 'Montserrat', sans-serif;
@@ -207,7 +207,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--black-two);
+    color: $clr-black-two;
   }
 
   .title {
@@ -219,7 +219,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.2px;
-    color: var(--black-two);
+    color: $clr-black-two;
   }
 
   .author {
@@ -231,7 +231,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--cool-blue);
+    color: $clr-cool-blue;
   }
 
   .options {
@@ -245,7 +245,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--cool-blue);
+    color: $clr-cool-blue;
     margin-top: 1rem;
 
     .comments {
@@ -289,7 +289,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--black-two);
+    color: $clr-black-two;
   }
 
   .completed {
@@ -304,12 +304,12 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--black-two);
+    color: $clr-black-two;
   }
 
   .line2 {
     margin: 1rem 0;
-    border: solid 1px var(--grey-border);
+    border: solid 1px $clr-grey-border;
   }
 
   .progressStatus {
@@ -329,7 +329,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: var(--black-two);
+    color: $clr-black-two;
   }
 
   .currentLesson {
@@ -340,7 +340,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: -0.4px;
-    color: var(--black-two);
+    color: $clr-black-two;
   }
 
   .updateProgress {
@@ -349,7 +349,7 @@
     margin: 0.75rem 0 0.563rem;
     padding: 0.438rem 1.188rem 0.5rem 1.375rem;
     border-radius: 3px;
-    background-color: var(--azure);
+    background-color: $clr-azure;
     font-family: 'Roboto Slab', serif;
     font-size: 0.813rem;
     font-weight: 300;
@@ -358,7 +358,7 @@
     line-height: normal;
     letter-spacing: 0.5px;
     text-align: center;
-    color: var(--white);
+    color: $clr-white;
     cursor: pointer;
   }
 }

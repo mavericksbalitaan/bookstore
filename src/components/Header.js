@@ -6,7 +6,7 @@ import '../scss/Header.scss';
 function Header() {
   const navLinkStyles = ({ isActive }) => ({
     fontWeight: isActive ? 'bold' : 'normal',
-    textDecoration: isActive ? 'none' : 'underline',
+    textDecoration: isActive ? 'none' : 'none',
   });
   return (
     <section className="headerWrapper">
