@@ -1,18 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/books';
 import '../scss/Form.scss';
 
-function AddBook() {
+function Form() {
+  const [bookTitle, setBookTitle] = useState('');
+  const [bookAuthor, setBookAuthor] = useState('');
+  const [bookCategory, setBookCategory] = useState('');
+
+  const dispatch = useDispatch();
+
   const handleInputTitle = (e) => {
-    console.log(e);
+    setBookTitle(e.target.value);
   };
 
   const handleInputAuthor = (e) => {
-    console.log(e);
+    setBookAuthor(e.target.value);
   };
 
-  const handleAddBook = () => {
-    alert('Book Added');
+  const handleInputCategory = (e) => {
+    setBookCategory(e.target.value);
   };
+
+  const checkValidity = () => {
+    if (!bookTitle || !bookCategory || !bookCategory) return;
+    dispatch(addBook(bookTitle, bookAuthor, bookCategory));
+    setBookTitle('');
+    setBookAuthor('');
+    setBookCategory('');
+  };
+
   return (
     <section className="addBookContainer">
       <div className="line" />
@@ -23,24 +40,37 @@ function AddBook() {
           className="inputBookTitle"
           placeholder="Book Title"
           onChange={handleInputTitle}
+          value={bookTitle}
+          required
         />
         <input
           type="text"
           className="inputBookAuthor"
           placeholder="Book Author"
           onChange={handleInputAuthor}
+          value={bookAuthor}
+          required
         />
-        <select className="selectCategory">
-          <option value="action">Action</option>
-          <option value="classic">Classic</option>
-          <option value="economy">Economy</option>
-          <option value="romance">Romance</option>
-          <option value="sciencefiction">Science Fiction</option>
+        <select
+          className="selectCategory"
+          onChange={handleInputCategory}
+          value={bookCategory}
+          required
+        >
+          <option value="">Select Category</option>
+          <option value="Action">Action</option>
+          <option value="Classic">Classic</option>
+          <option value="Economy">Economy</option>
+          <option value="Romance">Romance</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Unknown">Unknown</option>
         </select>
-        <button type="button" className="addBook" onClick={handleAddBook}>ADD BOOK</button>
+        <button type="submit" className="addBook" onClick={checkValidity}>
+          ADD BOOK
+        </button>
       </form>
     </section>
   );
 }
 
-export default AddBook;
+export default Form;
