@@ -25,7 +25,7 @@ const initialState = [
     author: 'Suzanne Collins',
     category: 'Economy',
     completed: '0',
-  }
+  },
 ];
 
 // Reducer
