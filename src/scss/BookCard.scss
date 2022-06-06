@@ -79,6 +79,20 @@
     margin-left: 0.25rem;
     margin-right: 0.25rem;
   }
+
+  .remove {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: $clr-cool-blue;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .progressContainer {

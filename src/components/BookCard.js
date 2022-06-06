@@ -1,9 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Progress } from 'antd';
+import { useDispatch } from 'react-redux';
+import { remBook } from '../redux/books/books';
 import '../scss/BookCard.scss';
 
 function BookCard({ book }) {
+  const dispatch = useDispatch();
   return (
     <section className="bookCardWrapper">
       <div className="bookCardContainer">
@@ -14,7 +17,7 @@ function BookCard({ book }) {
           <span className="comments">Comments</span>
           {' '}
           |
-          <span className="remove">Remove</span>
+          <button type="button" className="remove" onClick={() => dispatch(remBook(book.item_id))}>Remove</button>
           {' '}
           |
           <span className="edit">Edit</span>
@@ -49,9 +52,7 @@ function BookCard({ book }) {
           Current Chapter
         </span>
         <span className="currentLesson">
-          Chapter
-          {' '}
-          {Math.floor(Math.random() * 10)}
+          {book.currentLesson}
         </span>
         <span className="updateProgress">
           Update progress
@@ -63,11 +64,12 @@ function BookCard({ book }) {
 
 BookCard.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string,
+    item_id: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
     category: PropTypes.string,
     completed: PropTypes.number,
+    currentLesson: PropTypes.string,
   }).isRequired,
 };
 
