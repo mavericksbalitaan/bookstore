@@ -7,6 +7,7 @@ import '../scss/BookCard.scss';
 
 function BookCard({ book }) {
   const dispatch = useDispatch();
+
   return (
     <section className="bookCardWrapper">
       <div className="bookCardContainer">
@@ -17,7 +18,7 @@ function BookCard({ book }) {
           <span className="comments">Comments</span>
           {' '}
           |
-          <button type="button" className="remove" onClick={() => dispatch(delBook(book.item_id))}>Remove</button>
+          <button type="button" className="remove" onClick={() => dispatch(delBook(book.id))}>Remove</button>
           {' '}
           |
           <span className="edit">Edit</span>
@@ -64,7 +65,7 @@ function BookCard({ book }) {
 
 BookCard.propTypes = {
   book: PropTypes.shape({
-    item_id: PropTypes.string,
+    id: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
     category: PropTypes.string,
