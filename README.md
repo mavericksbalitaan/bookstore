@@ -1,5 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cba9dc89-2c6b-424d-aee3-5add009ab138/deploy-status)](https://app.netlify.com/sites/app-bookstore-cms/deploys)
+
 # Bookstore
 
 > This is an educational project similar to the "Awesome Books" website. It is a MVP version of it that allows you to:
@@ -23,7 +25,9 @@ Screenshots can be found in the repository.
 
 ## Live Demo 🔗
 
-Check the live demo [here](https://mavericks-db.github.io/bookstore/)👈
+Check the live demo [heroku](https://app-bookstore-cms.herokuapp.com/)👈
+
+Check the live demo [netlify](https://app-bookstore-cms.netlify.app/)👈
 
 ## Getting Started
 
