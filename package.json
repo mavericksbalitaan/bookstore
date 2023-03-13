@@ -1,6 +1,7 @@
 {
   "name": "bookstore",
   "version": "0.1.0",
+  "homepage": "https://mavericks-db.github.io/bookstore/",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
@@ -28,7 +29,9 @@
     "eject": "react-scripts eject",
     "eslint": "eslint . --fix",
     "stylelint": "stylelint \"**/*.scss\" --fix",
-    "linter": "eslint . --fix; stylelint \"**/*.scss\" --fix"
+    "linter": "eslint . --fix; stylelint \"**/*.scss\" --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
